@@ -59,24 +59,20 @@ export class ApiService {
   /**
    * Gets available wallets at the default path
    */
-  /*
   getWalletFiles(): Observable<any> {
     return this.http
       .get(this.bitcoinApiUrl + '/wallet/files')
       .map((response: Response) => response);
   }
-  */
 
   /**
   * Gets available wallets at the default path
   */
- /*
   getStratisWalletFiles(): Observable<any> {
     return this.http
       .get(this.stratisApiUrl + '/wallet/files')
       .map((response: Response) => response);
   }
-  */
 
   /**
    * Get a new mnemonic

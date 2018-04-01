@@ -21,15 +21,13 @@ export class GlobalService {
     return 37221;//remote.getGlobal('stratisApiPort');
   }
 
-  /*
   getWalletPath() {
     return this.walletPath;
   }
 
   setWalletPath(walletPath: string) {
     this.walletPath = walletPath;
-  }  
-  */
+  }
 
   getNetwork() {
     return this.network;

@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
-    //this.getWalletFiles();
+    this.getWalletFiles();
   }
 
   private buildDecryptForm(): void {
@@ -75,7 +75,6 @@ export class LoginComponent implements OnInit {
     }
   }
 
-  /*
   private getWalletFiles() {
     this.apiService.getWalletFiles()
       .subscribe(
@@ -111,7 +110,6 @@ export class LoginComponent implements OnInit {
       )
     ;
   }
-  */
 
   private updateWalletFileDisplay(walletName: string) {
     this.openWalletForm.patchValue({selectWallet: walletName})

@@ -23,6 +23,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.setTitle();
+    this.startApp();
     //this.apiService.getWalletFiles().retryWhen(errors => errors.delay(2000)).subscribe(() => this.checkStratisDaemon());
   }
 

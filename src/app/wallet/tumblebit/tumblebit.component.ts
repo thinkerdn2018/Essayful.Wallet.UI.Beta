@@ -86,7 +86,7 @@ export class TumblebitComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.checkWalletStatus();
     this.checkTumblingStatus();
-    //this.getWalletFiles();
+    this.getWalletFiles();
     this.getWalletBalance();
     this.coinUnit = this.globalService.getCoinUnit();
   };
@@ -508,7 +508,6 @@ export class TumblebitComponent implements OnInit, OnDestroy {
     ;
   };
 
-/*
   private getWalletFiles() {
     this.apiService.getWalletFiles()
       .subscribe(
@@ -545,7 +544,6 @@ export class TumblebitComponent implements OnInit, OnDestroy {
       )
     ;
   }
-*/
 
   private startConnectionRequest() {
     this.connectionInProgress = true;

@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getWalletFiles();
+    //this.getWalletFiles();
   }
 
   private buildDecryptForm(): void {

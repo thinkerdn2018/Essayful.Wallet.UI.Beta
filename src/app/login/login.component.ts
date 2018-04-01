@@ -76,6 +76,8 @@ export class LoginComponent implements OnInit {
   }
 
   private getWalletFiles() {
+    //todo 処理なし
+    /*
     this.apiService.getWalletFiles()
       .subscribe(
         response => {
@@ -109,6 +111,7 @@ export class LoginComponent implements OnInit {
         }
       )
     ;
+    */
   }
 
   private updateWalletFileDisplay(walletName: string) {

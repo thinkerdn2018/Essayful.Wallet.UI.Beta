@@ -41,16 +41,16 @@ export class ApiService {
   }
 
   get bitcoinApiUrl() {
-    return `http://servicebitcointestnet.azurewebsites.net/api`;//http://localhost:${this.globalService.bitcoinApiPort}/api;
+    return `https://servicebitcointestnet.azurewebsites.net/api`;//http://localhost:${this.globalService.bitcoinApiPort}/api;
   }
 
   get stratisApiUrl() {
-    return `http://servicestratistestnet.azurewebsites.net/api`;//http://localhost:${this.globalService.stratisApiPort}/api;
+    return `https://servicestratistestnet.azurewebsites.net/api`;//http://localhost:${this.globalService.stratisApiPort}/api;
   }
 
   get currentApiUrl() {
     if (!this._currentApiUrl) {
-      this._currentApiUrl = `http://servicebitcointestnet.azurewebsites.net/api`;//http://localhost:${this.globalService.bitcoinApiPort}/api;
+      this._currentApiUrl = `https://servicebitcointestnet.azurewebsites.net/api`;//http://localhost:${this.globalService.bitcoinApiPort}/api;
     }
 
     return this._currentApiUrl;
